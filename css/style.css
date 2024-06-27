@@ -823,6 +823,9 @@ legend,
 .w100 {
   width: 100%;
 }
+.mw344 {
+  min-width: 34.4rem;
+}
 .min704 {
   min-width: 70.4rem;
 }
@@ -1473,7 +1476,7 @@ button {
   display: block;
   text-align: center;
   padding: 1.4rem 2.0rem;
-  background: #C69B6E;
+  background: #678394;
   color: var(--white);
   font-size: 1.6rem;
   font-weight: 700;
@@ -1509,8 +1512,8 @@ button {
   padding: 1.4rem 2.0rem;
   min-height: 4.6rem;
   background: var(--white);
-  color: #C69B6E;
-  border: .1rem solid #C69B6E;
+  color: #678394;
+  border: .1rem solid #678394;
   font-size: 1.4rem;
   font-weight: 700;
   border-radius: 1.0rem;
@@ -1884,35 +1887,35 @@ button {
 }
 .nav-foot__cont ul li.ico-nav1.active a {
   background: url("../images/ico_home_active.svg") no-repeat center 0 / 2.4rem;
-  color: #C69B6E;
+  color: #678394;
 }
 .nav-foot__cont ul li.ico-nav2 {
   background: url("../images/ico_around.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav2.active a {
   background: url("../images/ico_around_active.svg") no-repeat center 0 / 2.4rem;
-  color: #C69B6E;
+  color: #678394;
 }
 .nav-foot__cont ul li.ico-nav3 {
   background: url("../images/ico_heart.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav3.active a {
   background: url("../images/ico_heart_active.svg") no-repeat center 0 / 2.4rem;
-  color: #C69B6E;
+  color: #678394;
 }
 .nav-foot__cont ul li.ico-nav4 {
   background: url("../images/ico_list.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav4.active a {
   background: url("../images/ico_list_active.svg") no-repeat center 0 / 2.4rem;
-  color: #C69B6E;
+  color: #678394;
 }
 .nav-foot__cont ul li.ico-nav5 {
   background: url("../images/ico_moreview.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav5.active a {
   background: url("../images/ico_moreview_active.svg") no-repeat center 0 / 2.4rem;
-  color: #C69B6E;
+  color: #678394;
 }
 
 .nav-foot__cont ul li a {
@@ -2102,6 +2105,9 @@ button {
   font-weight: 700;
   &.gray {
     color: rgba(0, 0, 0, 0.70) !important;
+  }
+  &.gray58 {
+    color: #58687F;
   }
   &.grayaa {
     color: #aaa;
@@ -5584,9 +5590,9 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: 400;
     border-radius: 5px;
     padding: 5.5px 1rem;
-    color:#C89C6F;
+    color:#678394;
     background: var(--white);
-    border: 1px solid #C89C6F;
+    border: 1px solid #678394;
   }
   &.gray {
     font-size: 6.75px;
@@ -5656,7 +5662,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 100%;
     background: var(--white);
     padding: 20px 16px;
-    color: #404F65;
+    color: #58687F;
     font-size: 16px;
     font-weight: 600;
   }
