@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈 마스터</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="bg-white">
+    <header class="header">
+      <div class="align triple both">
+        <a href="#none" onclick="alert('준비중입니다')"><img src="images/ico_hamburger.svg" alt=""></a>
+        <!-- <h1 class="h1"><a class="logo" href="home.html"></a></h1> -->
+        <div class="header__alarm">
+          <a class="btn-alarm" href="#none" onclick="alert('준비중입니다')"></a>
+        </div>
+      </div>
+    </header>
+    <main class="main pb100">
+      <section class="content">
+        
+        <div class="text-type4 fz20 px16 pt37">
+          1인 가구를 위한 통합 주거 마스터,<br>
+          부동산은 홈마스터에서          
+        </div>
+        <div class="img-wrap2 px16 pt24">
+          <img src="images/@img_master1.png" alt="">
+        </div>
+        <div class="align vm px16 pt20">
+          <button class="btn-main-on w100" type="button" onclick="alert('준비중입니다')">중개 성공 사례</button>
+          <button class="btn-main-empty w100 ml12" type="button" onclick="alert('준비중입니다')">전문가 동행 서비스</button>
+        </div>
+        <div class="text-type4 fz20 px16 pt52">
+          1인 가구를 위한 통합 주거 마스터,<br>
+          부동산은 메이크홈에서          
+        </div>
+        <div class="img-wrap2 px16 pt24">
+          <img src="images/@img_master2.png" alt="">
+        </div>
+        <div class="px16 pt18">
+          <button class="btn-main-on w100" type="button" id="btnProgress">이어서 진행하기</button>
+        </div>
+        <div class="border-10 mt35"></div>
+        <div class="text-type4 fz20 px16 pt34">
+          청년주택 공고를<br>
+          실시간으로 받아보세요          
+        </div>
+        <div class="img-wrap2 px16 pt24">
+          <img src="images/@img_master3.png" alt="">
+        </div>
+
+        <div class="px16 pt30">
+          <button class="btn-main-on w100" type="button" onclick="alert('준비중입니다')">청년주택 공고 알림 서비스 신청하기</button>
+        </div>
+        
+      </section>
+      <div class="nav-foot">
+        <nav class="nav-foot__cont">
+          <ul>
+            <li class="ico-nav1 active"><a href="home.html">홈</a></li>
+            <li class="ico-nav2"><a href="search1.html">매물 찾기</a></li>
+            <li class="ico-nav3"><a href="#none" onclick="alert('준비중입니다')">관심 매물</a></li>
+            <li class="ico-nav4"><a href="#noen" onclick="alert('준비중입니다')">청년주택 공고</a></li>
+            <li class="ico-nav5"><a href="#noen" onclick="alert('준비중입니다')">더보기</a></li>
+          </ul>
+        </nav>
+      </div>      
+      <div class="layer"></div>
+      <div class="modal-1">
+        <div class="text-type4 fz16 fw400 lh155 txt-center pt50 pb50 border-bottom">
+          저장된 인테리어 진행 내역이 있습니다<br>
+          불러오시겠습니까?
+        </div>
+        <div class="align both">
+          <button type="button" id="btnYes">예</button>
+          <button type="button" id="btnNo">아니오</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      $('.btn-area').click(function() {
+        $('.btn-area').removeClass('active');
+        $(this).toggleClass('active');
+        $('.layer').show();
+        $('.modal-1').show();
+      })
+      $('#btnProgress').click(function() {
+        $('.layer').show();
+        $('.modal-1').show();
+      })
+      $('#btnNo').click(function() {
+        $('.layer').hide();
+        $('.modal-1').hide();
+      })
+      $('#btnYes').click(function() {
+        window.location.href = 'planner.html';
+      })
+    </script>
+  </body>
+  <script src="js/button.js"></script>
+  <script src="js/navFoot.js"></script>
+</html>

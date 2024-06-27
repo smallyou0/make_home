@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈 마스터</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="bg-white">
+    <header class="header-sub block">
+      <div class="align triple bg-f8 border-bottom">
+        <a class="btn-back" href="javascript:window.history.back();"></a>
+        <h2>매물 목록</h2>
+        <div class="w-24"></div>
+      </div>
+    </header>
+    <main class="main pb100">
+      <section class="content">
+        <div class="img-wrap2 pt10" onclick="location.href='detail.html'">
+          <img src="images/@img_master5.png" alt="">
+        </div>
+      </section>
+      <div class="nav-foot">
+        <nav class="nav-foot__cont">
+          <ul>
+            <li class="ico-nav1"><a href="home.html">홈</a></li>
+            <li class="ico-nav2 active"><a href="round.html">매물 찾기</a></li>
+            <li class="ico-nav3"><a href="#none" onclick="alert('준비중입니다')">관심 매물</a></li>
+            <li class="ico-nav4"><a href="#noen" onclick="alert('준비중입니다')">청년주택 공고</a></li>
+            <li class="ico-nav5"><a href="#noen" onclick="alert('준비중입니다')">더보기</a></li>
+          </ul>
+        </nav>
+      </div>      
+      <div class="layer"></div>
+      <div class="modal-1">
+        <div class="text-type4 fz16 fw400 lh155 txt-center pt50 pb50 border-bottom">
+          저장된 인테리어 진행 내역이 있습니다<br>
+          불러오시겠습니까?
+        </div>
+        <div class="align both">
+          <button type="button" id="btnYes">예</button>
+          <button type="button" id="btnNo">아니오</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      $('.btn-area').click(function() {
+        $('.btn-area').removeClass('active');
+        $(this).toggleClass('active');
+        $('.layer').show();
+        $('.modal-1').show();
+      })
+      $('#btnProgress').click(function() {
+        $('.layer').show();
+        $('.modal-1').show();
+      })
+      $('#btnNo').click(function() {
+        $('.layer').hide();
+        $('.modal-1').hide();
+      })
+      $('#btnYes').click(function() {
+        window.location.href = 'planner.html';
+      })
+    </script>
+  </body>
+  <script src="js/button.js"></script>
+  <script src="js/navFoot.js"></script>
+</html>
